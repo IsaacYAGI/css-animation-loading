@@ -13,14 +13,12 @@
 }
 
 .dot-1, .dot-3{
-    border-radius: 100%;
     width: 30px;
     height: 30px;
     animation: reduceSize 1500ms linear 0ms infinite
 }
 
 .dot-2, .dot-4{
-    border-radius: 100%;
     width: 0px;
     height: 0px;
     animation: reduceSize 1500ms linear 750ms infinite;
