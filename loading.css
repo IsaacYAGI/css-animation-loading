@@ -1,0 +1,81 @@
+.container{
+    background-color: black;
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dot-1, .dot-2, .dot-3, .dot-4{
+    border-radius: 100%;
+}
+
+.dot-1, .dot-3{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    animation: reduceSize 1500ms linear 0ms infinite
+}
+
+.dot-2, .dot-4{
+    border-radius: 100%;
+    width: 0px;
+    height: 0px;
+    animation: reduceSize 1500ms linear 750ms infinite;
+}
+
+.dot-1{
+    background-color: #4285f4;
+}
+.dot-2{
+    background-color: #EA4335;
+}
+.dot-3{
+    background-color: #fbbc05;
+}
+.dot-4{
+    background-color: #34a853;
+}
+
+/*
+    Animations
+*/
+
+@keyframes reduceSize {
+    0% {
+        width: 30px;
+        height: 30px;
+    }
+    20% {
+        width: 20px;
+        height: 20px;
+    }
+    30% {
+        width: 15px;
+        height: 15px;
+    }
+    40% {
+        width: 10px;
+        height: 10px;
+    }
+    /*Pausamos la animacion un tiempo*/
+    50%, 80%{
+        width: 0px;
+        height: 0px;
+    }
+    86%{
+        width: 10px;
+        height: 10px;
+    }
+    90%{
+        width: 20px;
+        height: 20px;
+    }
+    100%{
+        width: 30px;
+        height: 30px;
+    }
+    
+}
